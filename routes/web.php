@@ -20,9 +20,9 @@ Route::get('/', function () {
 
   
 Route::get('/dashboard', function () {
-    return view('layouts.app');
+    return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
 
-Route::view('{any}', 'layouts.app')->middleware(['auth'])->where('any','.*');
+Route::view('{any}', 'dashboard')->middleware(['auth'])->where('any','.*');

@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "jsx": "preserve",
+        "forceConsistentCasingInFileNames": false,
         "baseUrl": ".",
         "paths": {
             "@/*": ["resources/js/*"]
