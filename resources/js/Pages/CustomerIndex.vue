@@ -1,4 +1,5 @@
 <template>
+    <app-layout title="Dashboard">
         <div class="card mt-1 mb-2">
             <div class="card-body">
                 <router-link :to="{name:'customer.create'}" class="btn btn-success btn-sm float-end">Ajouter un client</router-link>
@@ -36,6 +37,7 @@
                                 
             </tbody>
         </table>
+    </app-layout>
 </template>
 <script>
     import { onMounted } from 'vue';
